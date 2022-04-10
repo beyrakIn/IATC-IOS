@@ -1,9 +1,9 @@
-# IATC IOS TRAINING
+# IATC IOS TRAINING :octocat: /play tada
 
-## Session 1
+## Session :one:
 + Swift
 
-## Session 2
+## Session :two:
 
 + Pure functions
 + Implicit and explicit parameters
