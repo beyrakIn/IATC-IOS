@@ -1,6 +1,7 @@
 # IATC IOS TRAINING
 
 ## Session 1
++ Swift
 
 ## Session 2
 
