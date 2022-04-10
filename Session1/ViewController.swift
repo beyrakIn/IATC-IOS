@@ -69,9 +69,26 @@ class ViewController: UIViewController {
     let controller = SingleStructController()
     print(controller.getCount())
 
+
+    // Builder pattern
+
+    let person1 = Person.Builder()
+        .setName("Beyrak")
+        .setSurname("Asgarzade")
+        .setAge(20)
+        .setGender(.male)
+        .build()
+
+    print(person1.name)
+    print(person1.surname)
+    print(person1.age)
+    print(person1.gender)
+    
+
 }
 
 
+// Singleton pattern
 class SingleStructController{
   func getCount() -> Int{
     SingleStruct.shared.returnCount()
@@ -105,3 +122,64 @@ class SingleStruct{
   
 }
 
+
+// Builder pattern
+
+
+class Person{
+  var name: String
+  var surname: String
+  var age: Int
+  var gender: Gender
+
+  init(
+    name: String,
+    surname: String,
+    age: Int,
+    gender: Gender
+  ){
+    self.name = name
+    self.surname = surname
+    self.age = age
+    self.gender = gender
+  }
+
+  init(){
+    name = ""
+    surname = ""
+    age = 0
+    gender = .male
+  }
+
+  class Builder{
+    private let person: Person = Person()
+    func build() -> Person{
+      self.person
+    }
+
+    func setName(_ name: String) -> Builder{
+      self.person.name = name
+      return self
+    }
+    
+    func setSurname(_ surname: String) -> Builder{
+      self.person.surname = surname
+      return self
+    }
+    
+    func setAge(_ age: Int) -> Builder{
+      self.person.age = age
+      return self
+    }
+
+    func setGender(_ gender: Gender) -> Builder{
+      self.person.gender = gender
+      return self
+    }
+    
+  }
+}
+
+enum Gender{
+  case male, female
+}
