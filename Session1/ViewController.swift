@@ -8,10 +8,23 @@
 import UIKit
 
 class ViewController: UIViewController {
+    private mutableStringTest = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        self.mutableStringTest = self.process()
+        self.mutableStringTest = self.processAdd(self.mutableStringTest)
+        
+    }
+
+    // Pure functions
+    func process() -> String{
+        "Hello"
+    }
+
+    func processAdd(_ name: String) -> String {
+        return "Hello " + name        
     }
 
 
