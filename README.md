@@ -5,7 +5,7 @@
 
 ## Session 2
 
-+ Pure Functions
++ Pure functions
 + Implicit and explicit parameters
 + High order functions
 + Design patterns
