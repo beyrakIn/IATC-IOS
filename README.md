@@ -1,4 +1,4 @@
-# IATC IOS TRAINING :octocat: /play tada
+#  IATC IOS TRAINING 
 
 ## Session :one:
 + Swift
@@ -11,7 +11,8 @@
 + Design patterns
     * Singleton
     * Builder
-    * Factory
+    * Factory 
 + View model
 
 
+:squirrel: :octocat:1
