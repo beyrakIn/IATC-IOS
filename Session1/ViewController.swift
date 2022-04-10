@@ -83,6 +83,11 @@ class ViewController: UIViewController {
     print(person1.surname)
     print(person1.age)
     print(person1.gender)
+
+    // Factory pattern
+    let person2 = PersonFactory.build("Beyrak", "Asgarzade")
+    print(person2.name)
+    print(person2.surname)
     
 
 }
@@ -182,4 +187,27 @@ class Person{
 
 enum Gender{
   case male, female
+}
+
+
+// Factory pattern
+class PersonFactory{
+  var name: String
+  var surname: String
+  var age: Int
+  var gender: Gender
+
+  private init(){
+    self.name = ""
+    self.surname = ""
+    self.age = 0
+    self.gender = .male
+  }
+
+  static func build(_ name: String,_ surname: String) -> PersonFactory{
+    let person = PersonFactory()
+    person.name = name
+    person.surname = surname 
+    return person
+  }
 }
