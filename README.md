@@ -1,4 +1,5 @@
 #  IATC IOS TRAINING 
+#  :octocat:
 
 ## Session :one:
 + Swift
@@ -15,4 +16,4 @@
 + View model
 
 
-:squirrel: :octocat:1
+
