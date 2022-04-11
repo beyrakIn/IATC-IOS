@@ -6,9 +6,10 @@
 //
 
 import UIKit
+import Swift
 
 class ViewController: UIViewController {
-    private mutableStringTest = ""
+    private var mutableStringTest = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,30 +18,57 @@ class ViewController: UIViewController {
         self.mutableStringTest = self.processAdd(self.mutableStringTest)
 
         // High order functions
-        var list = [1, 2, 3, 4, 5, 6]
+        let list = [1, 2, 3, 4, 5, 6]
 
-        // forEach
+        // forEachs
         list.forEach{ number in
-            print("Number is \(number).")
+            Swift.print("Number is \(number).")
         }
 
         // map
-        var listNumbersStruct =  list.map{ number in 
+        let listNumbersStruct =  list.map{ number in
             return NumberItem(title: "\(number)", value: number)
         }
-        print(listNumbersStruct)
+        Swift.print(listNumbersStruct)
         
 
         // filter
-        var listNumberOdds =  list.filter{ number in 
+        let listNumberOdds =  list.filter{ number in
             return number % 2 == 1
         }
 
-        print(listNumberOdds)
+        Swift.print(listNumberOdds)
 
-        
-
+                
+        // Singleton pattern
         let instance = SingleStruct.shared
+        let instance2 = SingleStruct.shared
+        print(instance.returnCount())
+        instance2.inc()
+        print(instance.returnCount())
+
+        let controller = SingleStructController()
+        print(controller.getCount())
+
+
+        // Builder pattern
+
+        let person1 = Person.Builder()
+            .setName("Beyrak")
+            .setSurname("Asgarzade")
+            .setAge(20)
+            .setGender(.male)
+            .build()
+
+        print(person1.name)
+        print(person1.surname)
+        print(person1.age)
+        print(person1.gender)
+
+        // Factory pattern
+        let person2 = PersonFactory.build("Beyrak", "Asgarzade")
+        print(person2.name)
+        print(person2.surname)
         
     }
 
@@ -59,35 +87,7 @@ class ViewController: UIViewController {
     }
 
 
-    // Singleton pattern
-    let instance = SingleStruct.shared
-    let instance2 = SingleStruct.shared
-    print(instance.returnCount())
-    instance2.inc()
-    print(instance.returnCount())
 
-    let controller = SingleStructController()
-    print(controller.getCount())
-
-
-    // Builder pattern
-
-    let person1 = Person.Builder()
-        .setName("Beyrak")
-        .setSurname("Asgarzade")
-        .setAge(20)
-        .setGender(.male)
-        .build()
-
-    print(person1.name)
-    print(person1.surname)
-    print(person1.age)
-    print(person1.gender)
-
-    // Factory pattern
-    let person2 = PersonFactory.build("Beyrak", "Asgarzade")
-    print(person2.name)
-    print(person2.surname)
     
 
 }
