@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		23157DB628047125006F6527 /* PersonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23157DB528047125006F6527 /* PersonRepository.swift */; };
-		23157DB82804726B006F6527 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23157DB72804726B006F6527 /* MainViewModel.swift */; };
 		23A6E9982801D3E10005E2ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A6E9972801D3E10005E2ED /* AppDelegate.swift */; };
 		23A6E99A2801D3E10005E2ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A6E9992801D3E10005E2ED /* SceneDelegate.swift */; };
 		23A6E99C2801D3E10005E2ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A6E99B2801D3E10005E2ED /* ViewController.swift */; };
@@ -18,8 +16,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		23157DB528047125006F6527 /* PersonRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonRepository.swift; sourceTree = "<group>"; };
-		23157DB72804726B006F6527 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		23A6E9942801D3E10005E2ED /* Session1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Session1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23A6E9972801D3E10005E2ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23A6E9992801D3E10005E2ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,8 +63,6 @@
 				23A6E9A02801D3E40005E2ED /* Assets.xcassets */,
 				23A6E9A22801D3E40005E2ED /* LaunchScreen.storyboard */,
 				23A6E9A52801D3E40005E2ED /* Info.plist */,
-				23157DB528047125006F6527 /* PersonRepository.swift */,
-				23157DB72804726B006F6527 /* MainViewModel.swift */,
 			);
 			path = Session1;
 			sourceTree = "<group>";
@@ -144,8 +138,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23157DB82804726B006F6527 /* MainViewModel.swift in Sources */,
-				23157DB628047125006F6527 /* PersonRepository.swift in Sources */,
 				23A6E99C2801D3E10005E2ED /* ViewController.swift in Sources */,
 				23A6E9982801D3E10005E2ED /* AppDelegate.swift in Sources */,
 				23A6E99A2801D3E10005E2ED /* SceneDelegate.swift in Sources */,
