@@ -10,8 +10,10 @@ import Swift
 
 class ViewController: UIViewController {
     
+    // MARK: Views
+    
     private lazy var label: UILabel = {
-        var label = UILabel()
+        let label = UILabel()
         label.text = "Helllo world!"
         label.textColor = .orange
         label.frame = CGRect.init(x: 40, y: 50, width: 100, height: 20)
@@ -19,7 +21,7 @@ class ViewController: UIViewController {
     }()
     
     private lazy var button: UIButton = {
-        var button = UIButton()
+        let button = UIButton()
         button.setTitle("Random.", for: .normal)
         button.backgroundColor = .orange
         button.frame = CGRect.init(x: 40, y: 80, width: 100, height: 35)
@@ -29,9 +31,27 @@ class ViewController: UIViewController {
         return button
     }()
     
-    
-    
+    private var slider: UISlider = {
+        let slider = UISlider()
+        slider.frame = CGRect.init(x: 40, y: 130, width: 100, height: 35)
+        slider.addTarget(self, action: #selector(sliderChanged(_:)), for:  .valueChanged )
 
+        return slider
+    }()
+    
+    private var stackView: UIStackView = {
+        let stackView = UIStackView()
+        
+        stackView.axis = .horizontal
+        stackView.distribution = .equalSpacing
+        stackView.spacing = 16
+        
+        return stackView
+    }()
+    
+    
+    
+    // MARK: LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -40,14 +60,36 @@ class ViewController: UIViewController {
         super.viewDidAppear(animated)
         self.view.addSubview(label)
         self.view.addSubview(button)
+        self.view.addSubview(slider)
+        self.view.addSubview(stackView)
         
         
     }
     
+    // MARK: Functions
+    
     @objc func buttonOnClick(){
         let randNum = Int.random(in: 0...100)
+        let val: Float = Float(randNum / 100)
+        slider.value = val
         label.text = String(randNum)
     }
+    
+    @objc func sliderChanged(_ slider: UISlider){
+        let value: Int = Int(100 * slider.value)
+        label.text = String(value)
+    }
+    
+    /*
+     UIView
+     UIButton
+     UILabel
+     UIImageView
+     UISlider
+     UIStackView
+     
+     
+     */
     
 
     
