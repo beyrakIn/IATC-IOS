@@ -10,7 +10,7 @@ import Swift
 
 class ViewController: UIViewController {
     
-    // MARK: Views
+    // MARK:  UI Components
     
     private lazy var label: UILabel = {
         let label = UILabel()
@@ -39,34 +39,52 @@ class ViewController: UIViewController {
         return slider
     }()
     
-    private var stackView: UIStackView = {
+    private lazy var stackView: UIStackView = {
         let stackView = UIStackView()
         
-        stackView.axis = .horizontal
-        stackView.distribution = .equalSpacing
+        stackView.axis = .vertical
+        stackView.distribution = .fillProportionally
         stackView.spacing = 16
         
+        stackView.frame = CGRect.init(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height)
+        stackView.backgroundColor = .lightGray
         return stackView
     }()
     
+    private lazy var scrollView: UIScrollView = {
+        let view = UIScrollView()
+        
+        view.frame = CGRect.init(x: 0, y: 40, width: self.view.frame.width, height: self.view.frame.height)
+
+        
+        return view
+    }()
     
     
-    // MARK: LifeCycle
+    // MARK: Parent Delegates
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        self.view.addSubview(label)
-        self.view.addSubview(button)
-        self.view.addSubview(slider)
-        self.view.addSubview(stackView)
+//        self.view.addSubview(label)
+//        self.view.addSubview(button)
+//        self.view.addSubview(slider)
+        self.view.addSubview(scrollView)
+        
+        self.scrollView.addSubview(stackView)
+        
+        self.stackView.addArrangedSubview(self.label)
+        self.stackView.addArrangedSubview(self.button)
+        self.stackView.addArrangedSubview(self.slider)
+//        self.stackView.addArrangedSubview(self.label)
+//        self.stackView.addArrangedSubview(self.label)
         
         
     }
     
-    // MARK: Functions
+    // MARK: Click Handlers
     
     @objc func buttonOnClick(){
         let randNum = Int.random(in: 0...100)
@@ -87,6 +105,7 @@ class ViewController: UIViewController {
      UIImageView
      UISlider
      UIStackView
+     UIScrollView
      
      
      */
