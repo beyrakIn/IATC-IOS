@@ -17,7 +17,7 @@
 
 ## Session :three:
 
-+ Views and Controls
++ UI Components 
     * UIView
     * UIButton
     * UILabel
