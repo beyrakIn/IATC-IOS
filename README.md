@@ -21,4 +21,7 @@
     * UIView
     * UIButton
     * UILabel
-
+    * UIImageView
+    * UISlider
+    * UIStackView
+    * UIScrollView
