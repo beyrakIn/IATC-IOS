@@ -110,7 +110,6 @@ class HotelCard  {
         reviews.snp.makeConstraints { make in
             make.left.equalTo(rate.snp.right).offset(16)
             make.centerY.equalTo(rate.snp.centerY)
-//            make.bottom.equalTo(view.snp.bottom).offset(-24)
         }
         
         price.snp.makeConstraints { make in
