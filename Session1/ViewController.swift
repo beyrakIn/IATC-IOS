@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         let label = UILabel()
         label.text = "Helllo world!"
         label.textColor = .orange
-        label.frame = CGRect.init(x: 40, y: 50, width: 100, height: 20)
+//        label.frame = CGRect.init(x: 40, y: 50, width: 100, height: 20)
         return label
     }()
     
