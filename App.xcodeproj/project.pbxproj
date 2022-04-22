@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23208BDF2812DEA50019B74A /* ToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23208BDE2812DEA50019B74A /* ToolBar.swift */; };
+		23208BE12812E4550019B74A /* AppBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23208BE02812E4550019B74A /* AppBar.swift */; };
+		23208BE32812F4CF0019B74A /* HotelCardHorizontal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23208BE22812F4CF0019B74A /* HotelCardHorizontal.swift */; };
+		23208BE52812FE290019B74A /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23208BE42812FE290019B74A /* CategoryView.swift */; };
 		23F8927B280D8B85001CBD59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F8927A280D8B85001CBD59 /* AppDelegate.swift */; };
 		23F8927D280D8B85001CBD59 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F8927C280D8B85001CBD59 /* SceneDelegate.swift */; };
 		23F8927F280D8B85001CBD59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F8927E280D8B85001CBD59 /* ViewController.swift */; };
@@ -20,6 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		23208BDE2812DEA50019B74A /* ToolBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBar.swift; sourceTree = "<group>"; };
+		23208BE02812E4550019B74A /* AppBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBar.swift; sourceTree = "<group>"; };
+		23208BE22812F4CF0019B74A /* HotelCardHorizontal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelCardHorizontal.swift; sourceTree = "<group>"; };
+		23208BE42812FE290019B74A /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		23F89277280D8B85001CBD59 /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23F8927A280D8B85001CBD59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23F8927C280D8B85001CBD59 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +82,10 @@
 				23F89283280D8B85001CBD59 /* App.xcdatamodeld */,
 				23F89291280D92C2001CBD59 /* Hotel.swift */,
 				23F89293280D9646001CBD59 /* HotelCard.swift */,
+				23208BDE2812DEA50019B74A /* ToolBar.swift */,
+				23208BE02812E4550019B74A /* AppBar.swift */,
+				23208BE22812F4CF0019B74A /* HotelCardHorizontal.swift */,
+				23208BE42812FE290019B74A /* CategoryView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -159,6 +171,10 @@
 				23F8927F280D8B85001CBD59 /* ViewController.swift in Sources */,
 				23F89294280D9646001CBD59 /* HotelCard.swift in Sources */,
 				23F89285280D8B85001CBD59 /* App.xcdatamodeld in Sources */,
+				23208BE52812FE290019B74A /* CategoryView.swift in Sources */,
+				23208BDF2812DEA50019B74A /* ToolBar.swift in Sources */,
+				23208BE32812F4CF0019B74A /* HotelCardHorizontal.swift in Sources */,
+				23208BE12812E4550019B74A /* AppBar.swift in Sources */,
 				23F8927B280D8B85001CBD59 /* AppDelegate.swift in Sources */,
 				23F8927D280D8B85001CBD59 /* SceneDelegate.swift in Sources */,
 			);
