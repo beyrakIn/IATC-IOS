@@ -28,6 +28,18 @@ class ViewController: UIViewController {
         ingredient(name: "Avocado", image: UIImage(named: "avocado")!),
         ingredient(name: "Spinach", image: UIImage(named: "salad")!),
         ingredient(name: "Egg", image: UIImage(named: "egg")!),
+        ingredient(name: "Egg", image: UIImage(named: "egg")!),
+        ingredient(name: "Avocado", image: UIImage(named: "avocado")!),
+        ingredient(name: "Spinach", image: UIImage(named: "salad")!),
+        ingredient(name: "Egg", image: UIImage(named: "egg")!),
+        ingredient(name: "Egg", image: UIImage(named: "egg")!),
+        ingredient(name: "Avocado", image: UIImage(named: "avocado")!),
+        ingredient(name: "Spinach", image: UIImage(named: "salad")!),
+        ingredient(name: "Egg", image: UIImage(named: "egg")!),
+        ingredient(name: "Egg", image: UIImage(named: "egg")!),
+        ingredient(name: "Avocado", image: UIImage(named: "avocado")!),
+        ingredient(name: "Spinach", image: UIImage(named: "salad")!),
+        ingredient(name: "Egg", image: UIImage(named: "egg")!),
 
     ]
     
@@ -207,24 +219,24 @@ class ViewController: UIViewController {
         
         self.foodName.snp.makeConstraints { make in
             make.top.equalTo(self.sandwich.snp.bottom).offset(73)
-            make.left.equalTo(self.view.snp.left).offset(24)
+            make.left.equalTo(self.rootScrollView.snp.left).offset(24)
         }
         
         self.foodPrice.snp.makeConstraints { make in
             make.centerY.equalTo(self.foodName.snp.centerY)
-            make.right.equalTo(self.view.snp.right).offset(-24)
+            make.right.equalTo(self.view.safeAreaLayoutGuide.snp.right).offset(-24)
         }
         
         self.foodDesc.snp.makeConstraints { make in
             make.top.equalTo(self.foodName.snp.bottom).offset(12)
-            make.left.equalTo(self.view.snp.left).offset(24)
-            make.right.equalTo(self.view.snp.right).offset(-24)
+            make.left.equalTo(self.view.safeAreaLayoutGuide.snp.left).offset(24)
+            make.right.equalTo(self.view.safeAreaLayoutGuide.snp.right).offset(-24)
         }
         
         self.horizontalStack.snp.makeConstraints { make in
             make.top.equalTo(self.foodDesc.snp.bottom).offset(30)
-            make.left.equalTo(self.view.snp.left).offset(24)
-            make.right.equalTo(self.view.snp.right).offset(-24)
+            make.left.equalTo(self.view.safeAreaLayoutGuide.snp.left).offset(24)
+            make.right.equalTo(self.view.safeAreaLayoutGuide.snp.right).offset(-24)
             make.height.equalTo(58)
         }
         
@@ -240,26 +252,26 @@ class ViewController: UIViewController {
         
         self.ingredientsLabel.snp.makeConstraints { make in
             make.top.equalTo(self.horizontalStack.snp.bottom).offset(30)
-            make.left.equalTo(self.view.snp.left).offset(24)
+            make.left.equalTo(self.view.safeAreaLayoutGuide.snp.left).offset(24)
         }
         
         self.collectionView.snp.makeConstraints { make in
             make.height.equalTo(74)
             make.top.equalTo(self.ingredientsLabel.snp.bottom).offset(12)
-            make.left.equalTo(self.view.snp.left).offset(24)
-            make.right.equalTo(self.view.snp.right)
+            make.left.equalTo(self.view.safeAreaLayoutGuide.snp.left).offset(24)
+            make.right.equalTo(self.view.safeAreaLayoutGuide.snp.right)
         }
         
         self.addToppings.snp.makeConstraints { make in
             make.top.equalTo(self.collectionView.snp.bottom).offset(30)
-            make.left.equalTo(self.view.snp.left).offset(24)
+            make.left.equalTo(self.view.safeAreaLayoutGuide.snp.left).offset(24)
         }
         
         self.tableView.snp.makeConstraints { make in
             make.width.equalTo(self.view.frame.width - 48)
             make.height.equalTo(480)
             make.top.equalTo(self.addToppings.snp.bottom).offset(12)
-            make.left.equalTo(self.view.snp.left).offset(24)
+            make.left.equalTo(self.view.safeAreaLayoutGuide.snp.left).offset(24)
 
         }
 
@@ -273,7 +285,6 @@ class ViewController: UIViewController {
         }
         
         
-        // Do any additional setup after loading the view.
     }
     
 
