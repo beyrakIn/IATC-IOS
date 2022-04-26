@@ -14,6 +14,18 @@
 		2338FCAC2816C9FC00B42613 /* Food.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2338FCAA2816C9FC00B42613 /* Food.xcdatamodeld */; };
 		2338FCAE2816C9FE00B42613 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2338FCAD2816C9FE00B42613 /* Assets.xcassets */; };
 		2338FCB12816C9FE00B42613 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2338FCAF2816C9FE00B42613 /* LaunchScreen.storyboard */; };
+		2338FCBA2816CAEA00B42613 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2338FCB92816CAEA00B42613 /* SnapKit */; };
+		2338FCBC2816D92800B42613 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2338FCBB2816D92800B42613 /* Cell.swift */; };
+		2338FCBE2816E22500B42613 /* IngredientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2338FCBD2816E22500B42613 /* IngredientView.swift */; };
+		2338FCC02816F85B00B42613 /* ToppingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2338FCBF2816F85B00B42613 /* ToppingView.swift */; };
+		23EB25FC28180B2B0045F563 /* BottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EB25FB28180B2B0045F563 /* BottomSheet.swift */; };
+		23EB25FE28181B0E0045F563 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EB25FD28181B0E0045F563 /* RatingView.swift */; };
+		23EB2606281824DC0045F563 /* Mulish-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 23EB2605281820C60045F563 /* Mulish-Black.ttf */; };
+		23EB2607281824E20045F563 /* Mulish-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 23EB2601281820C60045F563 /* Mulish-Regular.ttf */; };
+		23EB2608281824E60045F563 /* Mulish-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 23EB2602281820C60045F563 /* Mulish-SemiBold.ttf */; };
+		23EB2609281824EA0045F563 /* Mulish-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 23EB2600281820C60045F563 /* Mulish-Medium.ttf */; };
+		23EB260A281824EE0045F563 /* Mulish-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 23EB2603281820C60045F563 /* Mulish-ExtraBold.ttf */; };
+		23EB260C281824F30045F563 /* Mulish-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 23EB2604281820C60045F563 /* Mulish-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +38,17 @@
 		2338FCAD2816C9FE00B42613 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2338FCB02816C9FE00B42613 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2338FCB22816C9FE00B42613 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2338FCBB2816D92800B42613 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		2338FCBD2816E22500B42613 /* IngredientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientView.swift; sourceTree = "<group>"; };
+		2338FCBF2816F85B00B42613 /* ToppingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToppingView.swift; sourceTree = "<group>"; };
+		23EB25FB28180B2B0045F563 /* BottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheet.swift; sourceTree = "<group>"; };
+		23EB25FD28181B0E0045F563 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		23EB2600281820C60045F563 /* Mulish-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-Medium.ttf"; sourceTree = "<group>"; };
+		23EB2601281820C60045F563 /* Mulish-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-Regular.ttf"; sourceTree = "<group>"; };
+		23EB2602281820C60045F563 /* Mulish-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-SemiBold.ttf"; sourceTree = "<group>"; };
+		23EB2603281820C60045F563 /* Mulish-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-ExtraBold.ttf"; sourceTree = "<group>"; };
+		23EB2604281820C60045F563 /* Mulish-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-Bold.ttf"; sourceTree = "<group>"; };
+		23EB2605281820C60045F563 /* Mulish-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-Black.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2338FCBA2816CAEA00B42613 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +82,7 @@
 		2338FCA02816C9FC00B42613 /* Food */ = {
 			isa = PBXGroup;
 			children = (
+				23EB25FF2818206A0045F563 /* fonts */,
 				2338FCA12816C9FC00B42613 /* AppDelegate.swift */,
 				2338FCA32816C9FC00B42613 /* SceneDelegate.swift */,
 				2338FCA52816C9FC00B42613 /* ViewController.swift */,
@@ -66,8 +91,26 @@
 				2338FCAF2816C9FE00B42613 /* LaunchScreen.storyboard */,
 				2338FCB22816C9FE00B42613 /* Info.plist */,
 				2338FCAA2816C9FC00B42613 /* Food.xcdatamodeld */,
+				2338FCBB2816D92800B42613 /* Cell.swift */,
+				2338FCBD2816E22500B42613 /* IngredientView.swift */,
+				2338FCBF2816F85B00B42613 /* ToppingView.swift */,
+				23EB25FB28180B2B0045F563 /* BottomSheet.swift */,
+				23EB25FD28181B0E0045F563 /* RatingView.swift */,
 			);
 			path = Food;
+			sourceTree = "<group>";
+		};
+		23EB25FF2818206A0045F563 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				23EB2605281820C60045F563 /* Mulish-Black.ttf */,
+				23EB2604281820C60045F563 /* Mulish-Bold.ttf */,
+				23EB2603281820C60045F563 /* Mulish-ExtraBold.ttf */,
+				23EB2600281820C60045F563 /* Mulish-Medium.ttf */,
+				23EB2601281820C60045F563 /* Mulish-Regular.ttf */,
+				23EB2602281820C60045F563 /* Mulish-SemiBold.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +129,9 @@
 			dependencies = (
 			);
 			name = Food;
+			packageProductDependencies = (
+				2338FCB92816CAEA00B42613 /* SnapKit */,
+			);
 			productName = Food;
 			productReference = 2338FC9E2816C9FC00B42613 /* Food.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +160,9 @@
 				Base,
 			);
 			mainGroup = 2338FC952816C9FC00B42613;
+			packageReferences = (
+				2338FCB82816CAEA00B42613 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 2338FC9F2816C9FC00B42613 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -128,9 +177,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23EB260C281824F30045F563 /* Mulish-Bold.ttf in Resources */,
+				23EB2606281824DC0045F563 /* Mulish-Black.ttf in Resources */,
 				2338FCB12816C9FE00B42613 /* LaunchScreen.storyboard in Resources */,
 				2338FCAE2816C9FE00B42613 /* Assets.xcassets in Resources */,
+				23EB2608281824E60045F563 /* Mulish-SemiBold.ttf in Resources */,
+				23EB260A281824EE0045F563 /* Mulish-ExtraBold.ttf in Resources */,
 				2338FCA92816C9FC00B42613 /* Main.storyboard in Resources */,
+				23EB2607281824E20045F563 /* Mulish-Regular.ttf in Resources */,
+				23EB2609281824EA0045F563 /* Mulish-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,8 +196,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2338FCC02816F85B00B42613 /* ToppingView.swift in Sources */,
 				2338FCA62816C9FC00B42613 /* ViewController.swift in Sources */,
+				23EB25FC28180B2B0045F563 /* BottomSheet.swift in Sources */,
+				23EB25FE28181B0E0045F563 /* RatingView.swift in Sources */,
 				2338FCAC2816C9FC00B42613 /* Food.xcdatamodeld in Sources */,
+				2338FCBC2816D92800B42613 /* Cell.swift in Sources */,
+				2338FCBE2816E22500B42613 /* IngredientView.swift in Sources */,
 				2338FCA22816C9FC00B42613 /* AppDelegate.swift in Sources */,
 				2338FCA42816C9FC00B42613 /* SceneDelegate.swift in Sources */,
 			);
@@ -360,6 +420,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2338FCB82816CAEA00B42613 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2338FCB92816CAEA00B42613 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2338FCB82816CAEA00B42613 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		2338FCAA2816C9FC00B42613 /* Food.xcdatamodeld */ = {
