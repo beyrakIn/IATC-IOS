@@ -35,3 +35,8 @@
    * UITableView
    * UICollectionView
 
+## Session :seven:
+   * UIDatePicker
+   * UIPageControl
+   * UISegmentedControl
+   * UIStepper
