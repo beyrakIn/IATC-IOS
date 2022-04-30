@@ -14,6 +14,12 @@
 		23C28DE8281BF9240051DA8E /* App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 23C28DE6281BF9240051DA8E /* App.xcdatamodeld */; };
 		23C28DEA281BF9250051DA8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23C28DE9281BF9250051DA8E /* Assets.xcassets */; };
 		23C28DED281BF9250051DA8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23C28DEB281BF9250051DA8E /* LaunchScreen.storyboard */; };
+		23C28DF9281C00C00051DA8E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 23C28DF8281C00C00051DA8E /* SnapKit */; };
+		23C28DFB281C03480051DA8E /* ReportScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C28DFA281C03480051DA8E /* ReportScreen.swift */; };
+		23C28DFD281C03630051DA8E /* AppointmentsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C28DFC281C03630051DA8E /* AppointmentsScreen.swift */; };
+		23C28DFF281C03830051DA8E /* ScheduleScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C28DFE281C03830051DA8E /* ScheduleScreen.swift */; };
+		23C28E01281C26050051DA8E /* AppointmentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C28E00281C26050051DA8E /* AppointmentCell.swift */; };
+		23C28E03281C44570051DA8E /* ReportCardOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C28E02281C44570051DA8E /* ReportCardOne.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,11 @@
 		23C28DE9281BF9250051DA8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23C28DEC281BF9250051DA8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23C28DEE281BF9250051DA8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23C28DFA281C03480051DA8E /* ReportScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportScreen.swift; sourceTree = "<group>"; };
+		23C28DFC281C03630051DA8E /* AppointmentsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsScreen.swift; sourceTree = "<group>"; };
+		23C28DFE281C03830051DA8E /* ScheduleScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleScreen.swift; sourceTree = "<group>"; };
+		23C28E00281C26050051DA8E /* AppointmentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentCell.swift; sourceTree = "<group>"; };
+		23C28E02281C44570051DA8E /* ReportCardOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportCardOne.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23C28DF9281C00C00051DA8E /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +56,7 @@
 			children = (
 				23C28DDC281BF9240051DA8E /* App */,
 				23C28DDB281BF9240051DA8E /* Products */,
+				23C28DF7281C00850051DA8E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,8 +79,20 @@
 				23C28DEB281BF9250051DA8E /* LaunchScreen.storyboard */,
 				23C28DEE281BF9250051DA8E /* Info.plist */,
 				23C28DE6281BF9240051DA8E /* App.xcdatamodeld */,
+				23C28DFA281C03480051DA8E /* ReportScreen.swift */,
+				23C28DFC281C03630051DA8E /* AppointmentsScreen.swift */,
+				23C28DFE281C03830051DA8E /* ScheduleScreen.swift */,
+				23C28E00281C26050051DA8E /* AppointmentCell.swift */,
+				23C28E02281C44570051DA8E /* ReportCardOne.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		23C28DF7281C00850051DA8E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +111,9 @@
 			dependencies = (
 			);
 			name = App;
+			packageProductDependencies = (
+				23C28DF8281C00C00051DA8E /* SnapKit */,
+			);
 			productName = App;
 			productReference = 23C28DDA281BF9240051DA8E /* App.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +142,9 @@
 				Base,
 			);
 			mainGroup = 23C28DD1281BF9240051DA8E;
+			packageReferences = (
+				23C28DF4281BFFCE0051DA8E /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 23C28DDB281BF9240051DA8E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -142,9 +173,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				23C28DE2281BF9240051DA8E /* ViewController.swift in Sources */,
+				23C28E03281C44570051DA8E /* ReportCardOne.swift in Sources */,
 				23C28DE8281BF9240051DA8E /* App.xcdatamodeld in Sources */,
 				23C28DDE281BF9240051DA8E /* AppDelegate.swift in Sources */,
+				23C28DFF281C03830051DA8E /* ScheduleScreen.swift in Sources */,
 				23C28DE0281BF9240051DA8E /* SceneDelegate.swift in Sources */,
+				23C28DFB281C03480051DA8E /* ReportScreen.swift in Sources */,
+				23C28DFD281C03630051DA8E /* AppointmentsScreen.swift in Sources */,
+				23C28E01281C26050051DA8E /* AppointmentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,7 +339,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.beyrak.app.App;
+				PRODUCT_BUNDLE_IDENTIFIER = com.beyrak.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -330,7 +366,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.beyrak.app.App;
+				PRODUCT_BUNDLE_IDENTIFIER = com.beyrak.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -360,6 +396,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		23C28DF4281BFFCE0051DA8E /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		23C28DF8281C00C00051DA8E /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 23C28DF4281BFFCE0051DA8E /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		23C28DE6281BF9240051DA8E /* App.xcdatamodeld */ = {
